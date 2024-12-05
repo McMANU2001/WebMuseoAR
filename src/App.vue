@@ -34,12 +34,12 @@
                     <router-link to="/admin" @click="isMobileMenuOpen = false">Panel de administración</router-link>
                   </template>
                   <template v-if="user?.rol === false">
+                    <router-link to="/realidad-aumentada" @click="isMobileMenuOpen = false">Realidad Aumentada</router-link>
                     <router-link to="/agendar-visita" @click="isMobileMenuOpen = false">Agendar Visita</router-link>
                   </template>
                   <button @click="handleLogout">Salir</button>
                 </template>
                 <template v-else>
-                  <router-link to="/realidad-aumentada" @click="isMobileMenuOpen = false">Realidad Aumentada</router-link>
                   <router-link to="/login" @click="isMobileMenuOpen = false">Iniciar sesión</router-link>
                   <router-link to="/register" @click="isMobileMenuOpen = false">Registrarse</router-link>
                 </template>
